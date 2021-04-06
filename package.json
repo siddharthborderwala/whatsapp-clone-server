@@ -1,0 +1,49 @@
+{
+	"name": "whatsapp-clone-server",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"private": true,
+	"jest": {
+		"transform": {
+			"^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/ts-jest"
+		},
+		"globals": {
+			"ts-jest": {
+				"diagnostics": false
+			}
+		},
+		"reporters": [
+			"default",
+			"jest-junit"
+		]
+	},
+	"scripts": {
+		"start": "ts-node index.ts",
+		"format": "prettier \"**/*.ts\" --write",
+		"test": "jest"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.7",
+		"@types/express": "^4.17.8",
+		"@types/graphql": "^14.5.0",
+		"@types/jest": "^26.0.14",
+		"@types/node": "14.11.1",
+		"apollo-server-testing": "^2.17.0",
+		"jest": "^26.4.2",
+		"jest-junit": "^11.1.0",
+		"prettier": "^2.1.2",
+		"ts-jest": "^26.4.0",
+		"ts-node": "9.0.0",
+		"typescript": "4.0.2"
+	},
+	"dependencies": {
+		"apollo-server-express": "^2.17.0",
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"graphql": "^15.3.0",
+		"graphql-import": "^1.0.2",
+		"graphql-scalars": "^1.2.7",
+		"graphql-tools": "^6.2.3"
+	}
+}
